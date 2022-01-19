@@ -13,11 +13,11 @@ define("SESSAO",md5(uniqid()));
 # LOCALHOST
 #*******************************
 define("PATHRAIZ",$_SERVER['DOCUMENT_ROOT'].'/'.$localPath); 
-define("URLRAIZ","http://localhost/".$localPath); 
-define("BD_USUARIO","root"); // USUARIO BANCO
-define("BD_SENHA",""); // SENHA BANCO
+define("URLRAIZ","http://resolve.tk/".$localPath);
+define("BD_USUARIO","reso_evolve"); // USUARIO BANCO
+define("BD_SENHA","@iso.Cube.85"); // SENHA BANCO
 define("BD_SERVIDOR","localhost"); // SERVIDOR BANCO
-define("BD_BASE","evolve"); // NOME BASE
+define("BD_BASE","reso_evolve"); // NOME BASE
 define("LOCAL",true);
 define("DEBUG",false);
 
