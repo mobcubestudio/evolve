@@ -4,7 +4,7 @@ $url = $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $requestUri = $_SERVER['REQUEST_URI'];
 
 //DOMINIO
-$localPath = "evolve-teste2/"; // SUA PASTA LOCAL DO PROJETO
+$localPath = "evolve/"; // SUA PASTA LOCAL DO PROJETO
 
 //SESSAO
 define("SESSAO",md5(uniqid()));
