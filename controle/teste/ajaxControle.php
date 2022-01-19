@@ -14,4 +14,12 @@ if($arrParametro[2]=="buscaIbge"){
     $arrRetorno['result'] = $arrCidadeIbge;
 }
 
+if($arrParametro[2]=="buscaPais"){
+    $linha = $arrParametro[3];
+    $arrPai = Relatorio::dados_pai($linha);
+    $arrRetorno['result'] = $arrPai;
+}
+
+
+
 die(json_encode($arrRetorno));

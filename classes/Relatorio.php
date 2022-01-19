@@ -26,6 +26,30 @@ class Relatorio {
         return (count($arrLista) > 0) ? $arrLista : false;
     }
 
+
+    public static function dados_pai($linha){
+        $sql = "SELECT id, codigo, nome, 
+                    consulta_saldos(12,12,2020,'beginning_balance', id) as inicial, 
+                    consulta_saldos(12,12,2020,'period_change', id) as movimento
+                    
+                FROM teste_tesouro_conta 
+                    WHERE id_pai = 0
+                    AND LEFT(id,1) = $linha
+                    ";
+        $rs = executaSql($sql);
+        $arrLista = array();
+        while($rg = $rs->fetchRow()){
+            $arrLista = $rg;
+            $arrLista['final'] = $arrLista['inicial'] + $arrLista['movimento'];
+
+            /*$arrLista[$rg['id']]['inicial'] = executaSql("CALL consulta_saldo(12,12,2020,'ending_balance', 10000000)")->fetchRow();
+            $arrLista[$rg['id']]['movimento'] = 250;
+            $arrLista[$rg['id']]['final'] = 500;*/
+            //array_push($arrLista[$rg['id']],$saldo);
+        }
+        return (count($arrLista) > 0) ? $arrLista : false;
+    }
+
     /*public static function saldo($cod_ibge, $mes, $ano, $tipo_valor, $id_conta){
         $sql = "CALL consulta_saldo($cod_ibge,$mes,$ano,'$tipo_valor', $id_conta);";
         $rs = executaSql($sql);

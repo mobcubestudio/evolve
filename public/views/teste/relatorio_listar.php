@@ -26,12 +26,15 @@
         </div>
         <div class="col-3">
             <label>&nbsp;</label>
-            <input class="left w100 btn btn-primary" type="submit" value="FILTRAR" >
+            <input class="left w100 btn btn-primary" id="filtrar" type="button" value="FILTRAR" >
         </div>
     </div>
 </form>
 <hr>
-<h3>Contas Contábeis - Acre [12/2020]</h3>
+<div id="filter-content">
+
+</div>
+
 
 <?php
 //print_r($arrPais);
@@ -45,7 +48,7 @@
             <th width="200px">Movimento</th>
             <th width="200px">Final</th>
         </tr>
-
+    </thead>
     <tbody>
     <?php
 
@@ -67,7 +70,7 @@
 </table>
 
 
-<table class="table table-striped table-bordered" width="100%" style="font-size: 10px">
+<!--table class="table table-striped table-bordered" width="100%" style="font-size: 10px">
     <tbody><tr class="cabecalho-relatorio">
             <td>Conta </td>
             <td width="200px">Inicial</td>
@@ -696,7 +699,8 @@
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times-circle tesouro"></i> 1.2.4.1.1.02.00 - SOFTWARES EM DESENVOLVIMENTO</td>
             <td align="right" data-saldo="26400" data-nat="D">R$ 26.400,00 D</td>
             <td align="right" data-saldo="26400" data-nat="C">R$ 0,00 C</td>
-            <td align="right" data-saldo="26400" data-nat="D">R$ 26.400,00 D</td></tr><tr class="filho0 filho filho-hide nivel0 nivelPadrao">
+            <td align="right" data-saldo="26400" data-nat="D">R$ 26.400,00 D</td></tr>
+            <tr class="filho0 filho filho-hide nivel0 nivelPadrao">
             <td><i class="fa fa-minus-circle js-abre-filhos" id="200000000"></i> 2.0.0.0.0.00.00 - PASSIVO E PATRIMÔNIO LIQUIDO</td>
             <td align="right" data-saldo="-7252914396.54" data-nat="C">R$ 7.252.914.396,54 C</td>
             <td align="right" data-saldo="-7252914396.54" data-nat="D">R$ 5.487.046.266,75 D</td>
@@ -1184,7 +1188,8 @@
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times-circle tesouro"></i> 2.3.7.2.1.03.00 - AJUSTES DE EXERCÍCIOS ANTERIORES</td>
             <td align="right" data-saldo="-12317.63" data-nat="C">R$ 12.317,63 C</td>
             <td align="right" data-saldo="-12317.63" data-nat="D">R$ 1.400,00 D</td>
-            <td align="right" data-saldo="-12317.63" data-nat="C">R$ 10.917,63 C</td></tr><tr class="filho0 filho filho-hide nivel0 nivelPadrao">
+            <td align="right" data-saldo="-12317.63" data-nat="C">R$ 10.917,63 C</td></tr>
+            <tr class="filho0 filho filho-hide nivel0 nivelPadrao">
             <td><i class="fa fa-minus-circle js-abre-filhos" id="300000000"></i> 3.0.0.0.0.00.00 - VARIAÇÃO PATRIMONIAL DIMINUTIVA</td>
             <td align="right" data-saldo="11042993827.98" data-nat="D">R$ 11.042.993.827,98 D</td>
             <td align="right" data-saldo="11042993827.98" data-nat="D">R$ 2.544.125.210,75 D</td>
@@ -3716,7 +3721,11 @@
             <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-times-circle tesouro"></i> 8.9.1.2.9.00.00 - EXECUÇÃO DE OUTRAS RESPONSABILIDADES DE TERCEIROS</td>
             <td align="right" data-saldo="-3993193.84" data-nat="C">R$ 3.993.193,84 C</td>
             <td align="right" data-saldo="-3993193.84" data-nat="D">R$ 649.862,40 D</td>
-            <td align="right" data-saldo="-3993193.84" data-nat="C">R$ 3.343.331,44 C</td></tr>                            </tbody></table>                           </thead></table>
+            <td align="right" data-saldo="-3993193.84" data-nat="C">R$ 3.343.331,44 C</td></tr>
+            </tbody>
+            </table>
+            </thead>
+            </table-->
 
 
 
